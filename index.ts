@@ -89,12 +89,28 @@ async function quick(arr: number[]){
     await reset();
 }
 
+async function partition(arr: number[]){
+    const [swap, comp, reset] = genContext('Quick Sort', arr);
+    const start = 0;
+    const end = arr.length - 1;
+    let front = start;
+    for(let i = start; i < end; i++){
+        if(await comp(i, end)){
+            await swap(i, front);
+            front++;
+        } 
+    } 
+    await swap(front, end); // Really important!!!
+    await reset();
+}
+
 function main(_: Event){
     registerFunctions([
         ['Shuffle', [shuffle]],
         ['Bubble', [shuffle, bubble]],
         ['Insertion', [shuffle, insertion]],
         ['Selection', [shuffle, selection]],
+        ['Partition', [shuffle, partition]],
         ['Quick', [shuffle, quick]],
     ]);
 }

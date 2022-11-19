@@ -106,12 +106,29 @@ function quick(arr) {
         yield reset();
     });
 }
+function partition(arr) {
+    return __awaiter(this, void 0, void 0, function* () {
+        const [swap, comp, reset] = genContext('Quick Sort', arr);
+        const start = 0;
+        const end = arr.length - 1;
+        let front = start;
+        for (let i = start; i < end; i++) {
+            if (yield comp(i, end)) {
+                yield swap(i, front);
+                front++;
+            }
+        }
+        yield swap(front, end); // Really important!!!
+        yield reset();
+    });
+}
 function main(_) {
     registerFunctions([
         ['Shuffle', [shuffle]],
         ['Bubble', [shuffle, bubble]],
         ['Insertion', [shuffle, insertion]],
         ['Selection', [shuffle, selection]],
+        ['Partition', [shuffle, partition]],
         ['Quick', [shuffle, quick]],
     ]);
 }

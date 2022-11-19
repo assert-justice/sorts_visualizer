@@ -2,6 +2,8 @@
 
 I hardly know 'er! This is a lesson concerning different sorting algorithms. My hope is that by visualizing these algorithms as we write them we'll get a better intuition for how they work and perform.
 
+I didn't have time to finish the notes but you can find the live version [here]()
+
 ## My Whacked out Visualizer Code
 
 If you study the `index.html` file you'll see its bringing in three scripts, `splotch.js`, `shuffle_vis.js`, and `index.js`. We'll only be modifying the last one. The first one is a simple and very incomplete library I whipped up to make creating resolution independent graphics easier. The second one is a bunch of code for creating and manipulating sorting visualizations and bar graphs. We'll be using a couple functions from that one.
