@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+ 
+  <title>Sorts Visualized</title>
+</head>
+<body>
+    <h1 id="title">Sorts Visualized</h1>
+    <h2 id="data">Comps: 0, Swaps: 0</h2>
+    <select name="algo" id="dropdown">
+    </select>
+    <label for="array-len">Length</label>
+    <input type="number" id="array-len" name="array-len" value="100">
+    <label for="swap-speed">Swap Speed (ms)</label>
+    <input type="number" id="swap-speed" name="swap-speed" value="0">
+    <label for="compare-speed">Compare Speed (ms)</label>
+    <input type="number" id="compare-speed" name="compare-speed" value="0">
+    <button id="launch">Launch!</button>
+    <div id="content"></div>
+    <script src="splotch.js" type="text/javascript" ></script>
+    <script src="shuffle_vis.js" type="text/javascript" ></script>
+    <script src="index.js" type="text/javascript" ></script>
+</body>
+</html>
