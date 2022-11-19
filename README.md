@@ -2,7 +2,7 @@
 
 I hardly know 'er! This is a lesson concerning different sorting algorithms. My hope is that by visualizing these algorithms as we write them we'll get a better intuition for how they work and perform.
 
-I didn't have time to finish the notes but you can find the live version [here]()
+I didn't have time to finish the notes but you can find the live version [here](https://assert-justice.github.io/sorts_visualizer/)
 
 ## My Whacked out Visualizer Code
 
